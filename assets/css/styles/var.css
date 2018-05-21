@@ -1,0 +1,23 @@
+:root
+{
+  --color-title_info: #265c99;
+  --color-nav: #1f497a;
+  --color-nav-buttom-hover: #618cbf;
+  --color-white: #fff;
+  --color-white-transparent: #fff3;
+  --color-gray-word: #636363;
+  --color-border-filter: #d0d0d0;
+  --color-background-adaptive-filter: #3e3e3eb3;
+  --color-background-button-apply: #e82425;
+  --color-description: #333;
+  --color-description-text: #969696;
+  --color-red-price: #ff4242;
+  --color-blue-price: #265c99;
+  --color-red-line-action: #ffa2a2;
+  --color-blue-line-action: #7dabde;
+  --color-action-background: #fffafa;
+  --color-product-background: #f7faff;
+  --color-action-border: #fea3a2;
+  --color-product-border: #265c9a;
+  --color-transparent: transparent;
+}

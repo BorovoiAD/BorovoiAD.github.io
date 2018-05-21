@@ -1,0 +1,227 @@
+header {
+  width: 100%;
+}
+.title_info {
+  background: var(--color-title_info);
+  height: 72px;
+  padding: 25px 0;
+}
+.title_info_content {
+  margin: auto;
+  max-width: 1130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: var(--color-white);
+  height: 22px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.phone {
+  font-size: 18px;
+}
+.search {
+  position: relative;
+}
+.search input {
+  text-indent: 18px;
+  outline: none;
+}
+.search input,
+.delivery > button {
+  background: var(--color-title_info)
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color-white-transparent);
+  color: var(--color-white);
+}
+.search:before {
+  content: '';
+  width: 13px;
+  height: 14px;
+  background-image: url(../../svg/forma-1.svg);
+  display: block;
+  transform: translateY(15px);
+}
+.title_info_search_label {
+  font-size: 14px;
+  position: absolute;
+  left: 18px;
+  bottom: 3px;
+  z-index: 1;
+  transition: all .4s;
+}
+.title_info_search:not(:placeholder-shown) + .title_info_search_label,
+.title_info_search:focus + .title_info_search_label {
+  bottom: 20px;
+  font-size: 11px;
+}
+.title_info_search_label_2 {
+  width: 13px;
+  height: 14px;
+  display: none;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.delivery > button{
+  font-size: 14px;
+  outline: none;
+}
+nav {
+  width: 100%;
+  background: var(--color-nav);
+  max-height: 47px;
+}
+.nav_content {
+  max-width: 1130px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 13px
+}
+.nav_drop_button {
+  background: var(--color-transparent);
+  border: none;
+  outline: none;
+  position: absolute;
+  top: -43px;
+  left: 15px;
+  width: 20px;
+  padding: 0;
+  display: none;
+}
+.nav_drop_button_span {
+  display: block;
+  border: 1px solid var(--color-white);
+  border-radius: 10px;
+  margin-bottom: 3px;
+}
+.nav_content_positions {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 80%;
+  justify-content: space-around;
+}
+.nav_content_button {
+  background: var(--color-nav);
+  border: none;
+  outline: none;
+  color: var(--color-white-transparent);
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: auto;
+  padding-bottom: 5px;
+}
+.nav_content_button._active_nav_content_button,
+.nav_content_button._button_basket {
+  color: var(--color-white);
+}
+.nav_content_basket_label {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+.nav_content_basket_label:before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 17px;
+  background-image: url(../../svg/basket.svg);
+  color: var(--color-white-transparent);
+}
+
+
+@media screen and (max-width: 1121px) {
+  .title_info_content {
+    padding-left: 70px;
+    padding-right: 60px;
+  }
+  .phone {
+    display: none;
+  }
+  .delivery {
+    display: none;
+  }
+  .search {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  .title_info_search {
+    width: 100%;
+  }
+  .title_info_search_label {
+    left: 32px;
+  }
+  nav {
+    max-height: 150px;
+    position: absolute;
+    z-index: 1;
+    background: var(--color-title_info);
+  }
+  .nav_content {
+    padding: 0;
+  }
+  .nav_content_positions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav_drop_button {
+    display: block;
+  }
+  .nav_drop_button:focus ~ .nav_content_button {
+    display: block;
+  }
+  .basket {
+    position: absolute;
+    top: -45px;
+    right: 15px;
+    width: 22px;
+  }
+  .nav_content_button {
+    width: 100%;
+    text-align: left;
+    background: var(--color-transparent);
+    padding-left: 15px;
+    display: none;
+  }
+  .nav_content_button:hover {
+    background: var(--color-nav-buttom-hover);
+  }
+  .nav_content_button._button_basket {
+    display: none;
+  }
+}
+@media screen and (max-width: 569px) {
+  .search {
+    position: absolute;
+    padding-top: 15px;
+    height: 45px;
+    width: 100%;
+    left: 0;
+    top: 72px;
+    background: var(--color-nav);
+  }
+  .title_info_search_label {
+    bottom: 15px;
+  }
+  .title_info_search:not(:placeholder-shown) + .title_info_search_label,
+  .title_info_search:focus + .title_info_search_label {
+    bottom: 30px;
+    font-size: 11px;
+  }
+  .title_info_search_label_2 {
+    display: block;
+  }
+  .search:before {
+    display: none;
+  }
+  .search input {
+    border: none;
+  }
+}

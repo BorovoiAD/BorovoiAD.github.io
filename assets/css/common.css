@@ -1,0 +1,6 @@
+@import 'styles/reset.css';
+@import 'styles/var.css';
+@import 'styles/global.css';
+
+@import 'block/header.css';
+@import 'block/main.css';
